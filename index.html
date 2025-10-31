@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>South Asian Student Association</title>
+
+  <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --orange: #ff914d;
+      --green: #38a433;
+      --gray-bg: #f0f1f5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      background-color: var(--gray-bg);
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      width: 160px;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 1rem 0 0.5rem;
+    }
+
+    h1 span { color: var(--orange); }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #333;
+    }
+
+    section {
+      background: white;
+      max-width: 900px;
+      margin: 1.5rem auto;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .section-title {
+      background: var(--orange);
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .leaders {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: var(--orange);
+      color: white;
+      border-radius: 14px;
+      padding: 1rem 1.25rem;
+      width: 260px;
+      text-align: center;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    .card small {
+      font-size: 0.9rem;
+      display: block;
+      margin-top: 0.25rem;
+      opacity: 0.9;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: solid 1px #aaa;
+      border-radius: 10px;
+    }
+
+    a { color: #1a62ff; text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      margin: 2rem 0;
+    }
+
+    button.share-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--green);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+
+    button.share-btn:hover {
+      background: #2f8f26;
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 2rem; }
+      section { padding: 1.5rem; }
+      iframe { height: 450px; }
+      button.share-btn { top: 0.5rem; right: 0.5rem; padding: 0.4rem 0.8rem; }
+    }
+
+    @media (max-width: 500px) {
+      header img { width: 120px; }
+      iframe { height: 400px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://fiq7vucwoeg9edeysfoc_8i4_cx-wwvjwasp30sw0-u.canva-cdn.email/389e5bc67602008311fa6a77679c8a5f.png" alt="SASA Logo">
+    <h1><span>South Asian</span> Student Association</h1>
+    <p class="subtitle" id="greeting">Welcome!</p>
+    <button class="share-btn" onclick="shareLink()">Share</button>
+  </header>
+
+  <section>
+    <div class="section-title">What We're About</div>
+    <p style="text-align:center;font-size:1.1rem;max-width:650px;margin:auto;">
+      Our goal is to create a welcoming space where we can celebrate our cultures, share traditions, and connect.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-title">Club Details</div>
+    <div class="leaders">
+      <div class="card">
+        Sitem Aytar
+        <small>Advisor</small>
+      </div>
+      <div class="card">
+        Veer Bajaj ‘30
+        <small>Club Leader</small>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:1.5rem;font-size:1rem;">
+      We meet every other week in <b>Room 6 during lunch</b>.
+    </p>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&showCalendars=0&title=South%20Asian%20Student%20Association%20Meeting%20Times&src=Y182ZmIyYTE3MmZlZjBlNDQzZTEyODEwMDI0Y2E0OTk4YzExZmE1Yzk1M2E3OWUyYWI3M2VhMjllNmQ1N2Q1YmZmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23f09300" frameborder="0" scrolling="no"></iframe>
+    <p style="text-align:center;margin-top:1.5rem;">See you there!</p>
+  </section>
+
+  <footer>
+    Please feel free to <a href="mailto:bajajv2030@york.org">email Veer</a> with any questions.
+  </footer>
+
+  <script>
+    // Check URL query string for ?name=
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+    const greeting = document.getElementById('greeting');
+    if(name) {
+      greeting.textContent = `Welcome, ${decodeURIComponent(name)}!`;
+    }
+
+    // Share button
+    function shareLink() {
+      const url = window.location.origin + window.location.pathname; // generic link
+      navigator.clipboard.writeText(url).then(() => {
+        alert('Link copied to clipboard!');
+      }).catch(() => {
+        alert('Failed to copy link. Please copy manually: ' + url);
+      });
+    }
+  </script>
+</body>
+</html>
